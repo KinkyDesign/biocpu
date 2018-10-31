@@ -7,6 +7,10 @@ if ("BiocManager" %in% rownames(installed.packages()))
 install.packages("BiocManager", repos="https://cran.rstudio.com")
 #install.packages("devtools", repos="https://cran.rstudio.com")
 #devtools::install_github("Bioconductor/BiocManager")
+
+install.packages("BiocInstaller", repos="http://bioconductor.org/packages/2.13/bioc")
+
+library(BiocInstaller)
 library(BiocManager)
 
 if(BiocManager::version() != "3.7"){
